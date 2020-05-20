@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Zera Dengue - Cadastro</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">ZER<img src="/outros/download.jpg" alt="Aedes Aegypti" width="70" height="70"> DENGUE
+  </h1>
+  <h6 style="text-align: center;">SISTEMA DE MONITORAMENTO E COMBATE AO MOSQUITO DA DENGUE</h6>
+  <hr>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="denuncia.html">Denúncia</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr>
+  <!-- DADOS DO USUÁRIO -->
+  <h1 style="text-align: center;">Cadastro</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Nome*</label>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Primeiro">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Último">
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="tel">Celular (WhatsApp)*</label>
+        <input type="text" class="form-control" id="phone_with_ddd">
+      </div>
+      <div class="form-group col-md-3">
+        <label>Nº de Protocolo</label>
+        <input type="submit" value="Gerar Protocolo" class="form-control btn btn-success" disabled>
+      </div>
+      <div class="form-group col-md-3">
+        <label id="protocol"><small><i>Verificação</i></small></label>
+        <input class="form-control">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="email">E-mail <small><i>(opcional)</i></small></label>
+        <input type="email" class="form-control">
+        <small><i>(nunca informaremos seu e-mail a ninguém)</i></small>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="senha">Criar senha <small><i>(mínimo de 6 caracteres)</i></small></label>
+        <input type="password" class="form-control">
+      </div>
+    </div>
+    <hr>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="exampleStreet">Logradouro*</label>
+        <input type="text" class="form-control" placeholder="Av., Rua, Travessa">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="exampleNeighbor">Bairro*</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="exampleNeighbor">Nº*</label>
+        <input type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-5">
+        <label for="inputCity">Cidade*</label>
+        <input type="text" class="form-control" id="inputCity">
+        <small><i>* campos obrigatórios</i></small>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Estado*</label>
+        <select id="inputState" class="form-control">
+          <option>Acre</option>
+          <option>Alagoas</option>
+          <option>Amapá</option>
+          <option>Amazonas</option>
+          <option>Bahia</option>
+          <option>Ceará</option>
+          <option>Espírito Santo</option>
+          <option>Goiás</option>
+          <option>Maranhão</option>
+          <option>Mato Grosso</option>
+          <option>Mato Grosso do Sul</option>
+          <option selected>Minas Gerais</option>
+          <option>Pará</option>
+          <option>Paraíba</option>
+          <option>Paraná</option>
+          <option>Pernambuco</option>
+          <option>Piauí</option>
+          <option>Rio de Janeiro</option>
+          <option>Rio Grande do Norte</option>
+          <option>Rio Grande do Sul</option>
+          <option>Rondônia</option>
+          <option>Roraima</option>
+          <option>Santa Catarina</option>
+          <option>São Paulo</option>
+          <option>Sergipe</option>
+          <option>Tocantins</option>
+        </select>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="exampleZipCode">CEP* <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/"
+            target="_blank"><small>não sei meu cep</small></a></label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <label for="obs">Observações <small><i>(quanto mais detalhes melhor)</i></small></label>
+      <textarea rows="5" cols="100"></textarea>
+    </div><br>
+    <button class="btn btn-primary">Enviar</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <hr>
+  <footer>
+    <div class="footer">
+      <small>Zera Dengue - Sistema de Monitorameto do Mosquito da Dengue | &copy; Todos os direitos reservados.</small>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<style>
+  body {
+    box-sizing: border-box;
+    border: 1px solid #ffa500;
+    border-radius: 10px;
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px 60px;
+  }
+
+  .footer {
+    width: auto;
+    height: auto;
+    margin: 30px 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 166, 0, 0.8);
+    text-align: center;
+  }
+</style>
