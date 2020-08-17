@@ -1,4 +1,4 @@
-<h1 align="center">Sistema Zera Dengue<h1>
+<h1 align="center">Sistema Zera Dengue</h1>
 
 <p>Zera Dengue é um sistema desenvolvido por Marcio Jr. e Renato Brito 
 alunos do curso de Análise e Desenvolvimento de Sistemas da faculdade
